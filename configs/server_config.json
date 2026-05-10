@@ -1,11 +1,12 @@
 {
   "db_config": {
-    "hostname": "http://tigergraph",
-    "restppPort": "14240",
-    "gsPort": "14240",
-    "username": "tigergraph",
-    "password": "tigergraph",
-    "getToken": false,
+    "hostname": "https://tg-f0153b1d-fab8-4076-9c0a-6b2e41058f48.tg-2635877100.i.tgcloud.io",
+    "restppPort": "443",
+    "gsPort": "443",
+    "username": "imkshitiz27 Jain",
+    "password": "enSEndabYDT.jDeSoDLNduNk2KqUVcx1U9Q5EMhw",
+    "getToken": true,
+    "apiToken": "enSEndabYDT.jDeSoDLNduNk2KqUVcx1U9Q5EMhw",
     "default_timeout": 300,
     "default_mem_threshold": 5000,
     "default_thread_limit": 8
