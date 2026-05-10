@@ -1,1 +1,54 @@
-../docs/tutorials/configs/server_config.json
+{
+  "db_config": {
+    "hostname": "http://tigergraph",
+    "restppPort": "14240",
+    "gsPort": "14240",
+    "username": "tigergraph",
+    "password": "tigergraph",
+    "getToken": false,
+    "default_timeout": 300,
+    "default_mem_threshold": 5000,
+    "default_thread_limit": 8
+  },
+  "graphrag_config": {
+    "reuse_embedding": true,
+    "ecc": "http://graphrag-ecc:8001",
+    "chat_history_api": "http://chat-history:8002",
+    "chunker_config": {}
+  },
+  "llm_config": {
+    "token_limit": 0,
+    "authentication_configuration": {
+      "GOOGLE_API_KEY": "AIzaSyBu0Fx4u2tRkqnWrK7UssqNhBL1AUVZhHk"
+    },
+    "embedding_service": {
+      "model_name": "models/embedding-001",
+      "embedding_model_service": "genai"
+    },
+    "completion_service": {
+      "llm_service": "gemini",
+      "llm_model": "gemini-2.5-flash",
+      "model_kwargs": {
+        "temperature": 0
+      },
+      "prompt_path": "./common/prompts/gemini/"
+    },
+    "multimodal_service": {
+      "llm_service": "gemini",
+      "llm_model": "gemini-2.5-flash",
+      "model_kwargs": {
+        "temperature": 0
+      }
+    }
+  },
+  "chat_config": {
+    "apiPort": "8002",
+    "dbPath": "chats.db",
+    "dbLogPath": "db.log",
+    "logPath": "requestLogs.jsonl",
+    "conversationAccessRoles": [
+      "superuser",
+      "globaldesigner"
+    ]
+  }
+}
